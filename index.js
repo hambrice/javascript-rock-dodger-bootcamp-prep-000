@@ -78,7 +78,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock(rock) {
-    ROCKS.push(rock)
+   
     var top = 0;
       function step() {
         rock.style.top = `${top += 2}px`;
@@ -116,6 +116,7 @@ function createRock(x) {
   // when there's a collision
   
   // Finally, return the rock element you've created
+ ROCKS.push(rock);
   return rock;
 }
 
